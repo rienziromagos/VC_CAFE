@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VC Cafe.ph</title>
+        <link rel="shorcut icon" type="image" href="./images/orig_logo.png">
+
+        <!--link to css-->
+        <link rel="stylesheet" href="contact-style.css">
+
+        <!--box icons-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <!--nav bar-->
+        <header>
+            <a href="#" class="logo">
+                <img src="images/hd_logo.png" alt="">
+            </a>
+            <!--menu icon bar-->
+                <i class='bx bx-menu' id="menu-icon"></i>
+            <!--links-->
+                <div class="navbar">
+                    <a  href="home.html">Home</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a class="active" href="contact.html">Contact Us</a>
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    
+                </div>
+        </header>
+
+        <!--home-->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>Coffee Time is Anytime</h1>
+                <h6>We're all ears - contact us and let's chat coffee!</h6>
+            </div>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-info-box">               
+                <p class="info-title">Contact Info:</p>
+                
+                <div class="info-item">
+                    <div class="info-circle"></div>
+                    <p class="info-text">Talamban, Cebu City</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-circle"></div>
+                    <p class="info-text">vccafe@gmail.com</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-circle"></div>
+                    <p class="info-text">123-456-789</p>
+                </div>
+                
+                <div class="soc_med_links">
+                    <a href="https://www.facebook.com/vccafecebu"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/vccebu/"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.tiktok.com/@brickandbrewph"><i class='bx bxl-tiktok'></i></a>
+                </div>  
+            </div>
+            
+            <div class="contact-form-box">
+                <form id="contactForm" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    <div class="form-submit">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerBottom">
+                <p>Copyright &copy;2025</p>
+            </div>
+        </footer>
+       <script src="contact-script.js"></script> 
+    </body>
+</html>

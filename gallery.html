@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VC Cafe Pop-Up</title>
+        <link rel="shorcut icon" type="image" href="./images/orig_logo.png">
+
+        <!--link to css-->
+        <link rel="stylesheet" href="gallery-style.css">
+
+        <!--box icons-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <!--nav bar-->
+        <header>
+            <a href="#" class="logo">
+                <img src="images/hd_logo.png" alt="">
+            </a>
+            <!--menu icon bar-->
+                <i class='bx bx-menu' id="menu-icon"></i>
+            <!--links-->
+                <div class="navbar">
+                    <a href="home.html">Home</a>
+                    <a href="aboutus.html">About</a>
+                    <a class="active" href="gallery.html">Gallery</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+        </header>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h1>Caffeine Chronicles</h1>
+            
+            <div class="gallery-container">
+                
+                <div class="gallery-wrapper">
+                    <div class="gallery-grid">
+                        <div class="gallery-item" data-type="image" data-title="Chic Bar Setup for Unforgettable Celebrations" data-description="Loved by couples and guests alike, we’ve earned numerous feedback for our dedication to quality, service, and customer satisfaction. From expertly brewed coffee to perfectly crafted cocktails, we’re here to ensure your special day is as delightful and memorable as you’ve always dreamed.">
+                            <div class="placeholder">
+                                <img src="images/wedding.jpg">
+                            </div>
+                            
+                        </div>
+                        <div class="gallery-item" data-type="video" data-title="The Art of Coffee in Motion" data-description="From the grind to the final pour, every step in our brewing process is crafted with precision and passion. Experience the beauty of coffee-making through skilled hands, premium tools, and a dedication to delivering that perfect cup, every time.">
+                            <div class="placeholder">
+                                <video>
+                                    <source src="videos/coffeebrewing.mp4"></source>
+                                </video>
+                            </div>
+                            
+                        </div>
+                        <div class="gallery-item" data-type="image" data-title="First Brew at the Office: A Coffee Bar Debut" data-description="A memorable throwback to our very first mobile coffee bar setup in an office! Huge thanks to this healthcare team for welcoming us and giving their hardworking employees a well-deserved treat. From the aroma of fresh brews to the warm smiles around the bar—this is what office perks should look like.">
+                            <div class="placeholder">
+                                <img src="images/officesetup.jpg">
+                            </div>
+                            
+                        </div>
+                        <div class="gallery-item" data-type="video" data-title="Construction Fun Meets Caffeine Run at Leo’s 1st Birthday!" data-description="We brought the ultimate fuel to Mr. Leo Arkyn’s construction-themed 1st birthday party with our Mobile Coffee Bar! While the kids played and explored, the grown-ups enjoyed handcrafted coffee—keeping the celebration lively from day to night.
+
+                        Because birthdays aren’t just for the little ones—parents and guests deserve a treat too!">
+                            <div class="placeholder">
+                                <video>
+                                    <source src="videos/birthdaysetup.mp4"></source>
+                                </video>
+                            </div>
+                            
+                        </div>
+                        <div class="gallery-item" data-type="image" data-title="Layered to Perfection: Our Classic Clubhouse Sandwich Delivery" data-description="Stacked with layers of flavor, freshness, and satisfaction—our Classic Clubhouse Sandwich is always a hit! Delivered 60 of these tasty delights to a company at 2Quad Building, and we’re beyond grateful for the trust. Whether it's for meetings, events, or everyday cravings, we’ve got you covered.">
+                            <div class="placeholder">
+                                <img src="images/clubhouse.jpg">
+                            </div>
+                            
+                        </div>
+                        <div class="gallery-item" data-type="video" data-title="Sips, Smiles, and Sweet Memories for Baby Isabelle" data-description="Celebrating Baby Isabelle’s baptism with heartwarming sips and joyful cuddles! Our mobile coffee bar brought the brews while the guests brought the love. From first laughs to second cups, it was a brew-tiful day at City Sports Club!">
+                            <div class="placeholder">
+                                <video>
+                                    <source src="videos/birthdaysetup2.mp4"></source>
+                                </video>
+                            </div>
+                        
+                        </div>
+                        <div class="gallery-item" data-type="image" data-title="Brewing Comfort at VisayasMed" data-description="Big thanks to VisayasMed Hospital for letting us be part of your event! Whether it's a quick break or a moment to reconnect, our Mobile Coffee Bar was there to turn waiting time into a mini recharge session.
+                        
+                        Fresh brews, warm smiles, and a little caffeine magic – because even the busiest days deserve a cozy pause.">
+                            <div class="placeholder">
+                                <img src="images/visayasmed.heic">
+                            </div>
+                            
+                        </div>
+                        <div class="gallery-item" data-type="video" data-title="Brews & Birthday Cheers" data-description="It’s not just a birthday celebration—it’s a full-on caffeine-powered party! 
+                        Thanks for letting our signature aqua bar be part of your special day. Whether it’s an iced latte or a cozy cappuccino, every cup came with extra birthday joy!
+                        Make your next celebration a little extra with VC Café on wheels. Let’s bring the brew-tiful vibes to your event!">
+                            <div class="placeholder">
+                                <video>
+                                    <source src="videos/colouredbar.mp4"></source>
+                                </video>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Modal Popup -->
+        <div class="modal" id="galleryModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div class="modal-body">
+                    <div class="media-container">
+                        <div id="mediaPlaceholder"></div>
+                    </div>
+                    <div class="details-container">
+                        <h2 id="mediaTitle"></h2>
+                        <p id="mediaDescription"></p>
+                        <div class="media-info">
+                            <p id="mediaDate">Date: January 2025</p>
+                            <p id="mediaType"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <footer>
+                <div class="footerContainer">
+                    <div class="soc_med_links">
+                        <a href="https://www.facebook.com/vccafecebu"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.instagram.com/vccebu/"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://www.tiktok.com/@brickandbrewph"><i class='bx bxl-tiktok'></i></a>
+                    </div>  
+                </div>
+                
+                <div class="footerBottom">
+                    <p>Copyright &copy;2025</p>
+                </div>
+            </footer>
+    
+    <script src="gallery-script.js"></script>
+
+    </body>
+</html>
+

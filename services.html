@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VC Cafe.ph</title>
+        <link rel="shorcut icon" type="image" href="./images/orig_logo.png">
+
+        <!--link to css-->
+        <link rel="stylesheet" href="services-style.css">
+
+        <!--box icons-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <!--nav bar-->
+        <header>
+            <a href="#" class="logo">
+                <img src="images/hd_logo.png" alt="">
+            </a>
+            <!--menu icon bar-->
+                <i class='bx bx-menu' id="menu-icon"></i>
+            <!--links-->
+                <div class="navbar">
+                    <a href="home.html">Home</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a class = "active" href="services.html">Services</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+        </header>
+
+    <!-- Coffee Catering Service Section -->
+    <section class="coffee-catering">
+        <div class="section-title">
+            <h2>VC Café On-Location</h2>
+            <p>Bringing artisanal coffee experiences at your service</p>
+        </div>
+
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="menu">Beverage Menu</button>
+                <button class="tab-btn" data-tab="events">Events & Venues</button>
+                <button class="tab-btn" data-tab="rates">Rates & Inclusions</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Menu Tab -->
+                <div class="tab-pane active" id="menu">
+                    <div class="menu-container">
+                        <div class="menu-card">
+                            <h3>Espresso-Based</h3>
+                            <ul class="coffee-list">
+                                <li>Espresso</li>
+                                <li>Americano</li>
+                                <li>Cappuccino</li>
+                                <li>Café Latte</li>
+                                <li>Café Mocha</li>
+                                <li>Café White Mocha</li>
+                                <li>Caramel Macchiato*</li>
+                                <li>Spanish Latte*</li>
+                            </ul>
+                            <p class="footnote">*Upon customer's request.</p>
+                        </div>
+
+                        <div class="menu-card">
+                            <h3>Non-Coffee & Kid-Friendly</h3>
+                            <ul class="coffee-list">
+                                <li>Milk</li>
+                                <li>Babyccino</li>
+                                <li>Chocolate</li>
+                                <li>Matcha**</li>
+                            </ul>
+                            <p class="footnote">** + 500 pesos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events Tab -->
+                <div class="tab-pane" id="events">
+                    <div class="events-container">
+                        <div class="events-card">
+                            <h3>Events We Cater</h3>
+                            <ul class="events-list">
+                                <li>Weddings</li>
+                                <li>Christenings</li>
+                                <li>Birthdays</li>
+                                <li>Funerals</li>
+                                <li>Debuts</li>
+                                <li>Anniversaries</li>
+                                <li>Company celebrations</li>
+                                <li>Store launchings</li>
+                                <li>Inauguration</li>
+                                <li>Family gatherings</li>
+                                <li>Reunions</li>
+                            </ul>
+                        </div>
+
+                        <div class="events-card">
+                            <h3>Venues Serviced</h3>
+                            <ul class="events-list">
+                                <li>Clients' residences</li>
+                                <li>Private companies</li>
+                                <li>Radisson Blu Hotel</li>
+                                <li>Bai Shin Lou (Marco Polo)</li>
+                                <li>Summit Galleria Cebu</li>
+                                <li>Polo Plaza</li>
+                                <li>Citadines Baseline</li>
+                                <li>Cebu Rolling Hills</li>
+                                <li>Maxicare Robinson's Galleria</li>
+                                <li>Maxicare AppleOne Bldg</li>
+                                <li>Paradise Garden Events Pavilion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rates Tab -->
+                <div class="tab-pane" id="rates">
+                    <div class="rates-container">
+                        <div class="rates-card">
+                            <h3>Rates</h3>
+                            <table class="rates-table">
+                                <thead>
+                                    <tr>
+                                        <th>Guest Count</th>
+                                        <th>Price (PHP)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>30 pax</td>
+                                        <td>5,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40 pax</td>
+                                        <td>6,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50 pax</td>
+                                        <td>7,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>60 pax</td>
+                                        <td>8,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100 pax</td>
+                                        <td>12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>150 pax</td>
+                                        <td>18,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>200 pax</td>
+                                        <td>24,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="footnote">For pax not indicated, you may request for a special quotation.</p>
+                        </div>
+
+                        <div class="inclusions-card">
+                            <h3>Package Inclusions</h3>
+                            <ul class="inclusions-list">
+                                <li>Beverage cups</li>
+                                <li>Utensils</li>
+                                <li>Table napkins</li>
+                                <li>Sugar & Creamer</li>
+                                <li>4 hours of service</li>
+                                <li>Full coffee bar setup</li>
+                            </ul>
+                            <div class="cta-container">
+                                <a href="contact.html" class="cta-button">Request Quotation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <footer>
+            <div class="footerContainer">
+                <div class="soc_med_links">
+                    <a href="https://www.facebook.com/vccafecebu"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/vccebu/"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.tiktok.com/@brickandbrewph"><i class='bx bxl-tiktok'></i></a>
+                </div>  
+            </div>
+            
+            <div class="footerBottom">
+                <p>Copyright &copy;2025</p>
+            </div>
+        </footer>
+       <script src="services-script.js"></script> 
+    </body>
+</html>
